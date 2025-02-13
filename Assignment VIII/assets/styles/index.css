@@ -1,0 +1,889 @@
+:root {
+    --bg-color: #ffffff;
+    --custom-color-1: #005AE2;
+    --custom-color-2: #0065FE;
+    --main-font-color: #141414;
+}
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url(../Fonts/Gilroy/Gilroy-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url(../Fonts/Gilroy/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Gilroy-SemiBold";
+    src: url(../Fonts/Gilroy/gilroy-semibold.ttf)
+}
+
+html, body {
+    font-family: 'Gilroy-Bold', 'Gilroy-Medium', Calibri, 'Gilroy-SemiBold', sans-serif;
+    max-width: 1440px;
+    margin: auto;
+    background-color: var(--bg-color);
+}
+
+a {
+    text-decoration: none;
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 21.09px;
+    letter-spacing: 0%;
+    color: #141414;
+}
+
+main {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+/* Nav Section */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.nav-links, .auth-links {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.my-urls {
+    color: #0065FE;
+}
+
+
+/* Nav Section Ends */
+
+/* Hero Section */
+
+.hero-section {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-title {
+    margin: 0;
+    padding: 0 150px;
+}
+
+.hero-heading {
+    font-size: 48px;
+    line-height: 96px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--main-font-color);
+    margin: 0;
+}
+
+.span-headings {
+    color: var(--custom-color-1);
+}
+
+.hero-vector-one {
+    position: relative;
+    left: 650px;
+    top: -20px;
+}
+
+.hero-paragraph {
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    padding: 0 350px;
+    color: var(--main-font-color);
+    text-align: center;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.mini-buttons {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 142px;
+    height: 44px;
+    padding: 12px 24px;
+    background-color: var(--custom-color-2);
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.mini-links {
+    font-family: "Gilroy-SemiBold";
+    color: var(--custom-color-2);
+    font-size: 16px;
+    line-height: 18.75px;
+    letter-spacing: 0%;
+}
+
+.triangle-shaped-vector {
+    position: absolute;
+    top: 720px;
+    left: 450px;
+}
+
+.links-design {
+    position: relative;
+    width: 384px;
+    left: 550px;
+    top: -80px;
+}
+
+.rectangle {
+    position: relative;
+    left: 450px;
+    top: 120px;
+    box-sizing: border-box;
+    width: 768px;
+    height: 224px;
+    background-color: #F9FBFD;
+    border: 0.5px solid #005AE2;
+    border-radius: 24px;
+    mix-blend-mode: multiply;
+    filter: url(#multiply-filter);
+    backdrop-filter: blur(212px);
+}
+
+.feature-description-container {
+    position: relative;
+    max-width: 550px;
+    top: -70px;
+    left: 560px;
+}
+
+.bold-span {
+    font-family: "Gilroy-SemiBold";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.feature-description {
+    font-family: "Gilroy-SemiBold";
+    bottom: 50px;
+    left: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 10;
+    color: var(--main-font-color);
+    text-align: center;
+    padding: 0 80px;
+}
+
+.flat-disc-vector {
+    width: 1440px;
+    padding-top: 50px;
+}
+
+/* Hero Section Ends */
+
+/* Performance Overview Section */
+
+.performance-overview {
+    text-align: left;
+    background-color: #F9FBFD;
+    margin-bottom: 100px;
+    padding: 60px 60px;
+    color: var(--main-font-color);
+}
+
+.performance-overview-container {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* global h2 application */
+
+h2 {
+    font-family: "Gilroy-Bold";
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+/* end */
+
+/* applies to the h3 in 
+performance overview and features overview sections */
+
+.metrics-features-heading {
+    font-family: "Gilroy-SemiBold";
+    font-size: 32px;
+}
+
+/* end */
+
+.performance-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 400px;
+    margin-right: 100px;
+    margin-left: 35px;
+}
+
+.key-metrics-container {
+    max-width: 709px;
+    margin-left: 30px;
+}
+
+.key-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+    margin-left: 80px;
+    gap: 50px;
+}
+
+.p-key-metrics {
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+/* Performance Overview Section Ends */
+
+/* Features Overview Section */
+
+.features-overview {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin: 0 80px;
+    margin-bottom: 100px;
+    color: var(--main-font-color);
+    background-color: var(--bg-color);
+}
+
+.features-title {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 500px;
+}
+
+.feature-heading {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.feature-heading::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 48px;
+    background: linear-gradient(180deg, #112232 0%, rgba(77, 107, 136, 0) 100%);
+    margin-right: 10px;
+}
+
+.p-features-title {
+    display: flex;
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    padding-top: 20px;
+    margin-right: 150px;
+  }
+
+.key-features-container {
+    max-width: 708px;
+}
+
+.key-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 0 30px;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.p-key-features {
+    display: block;
+    max-width: 340px;
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+/* Features Overview Section Ends */
+
+/* Pricing Intro Section */
+
+.pricing-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.pricing-intro-container {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pricing-intro-container::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 48px;
+    background: linear-gradient(180deg, #112232 0%, rgba(77, 107, 136, 0) 100%);
+    margin-right: 10px;
+}
+
+.pricing-description {
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 0 440px;
+}
+
+/* Pricing Intro Section Ends */
+
+/* Pricing Section */
+
+.pricing-section {
+    display: grid;
+    justify-content: center;
+    text-align: left;
+    margin: 0 100px;
+    margin-bottom: 100px;
+}
+
+.pricing-plans-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-title {
+    font-family: "Gilroy-Medium";
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    padding-left: 50px;
+    margin: 0;
+    margin-top: 40px;
+}
+
+h4 {
+    font-family: "Gilroy-Bold";
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.5%;
+    padding-left: 50px;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.plan-description {
+    font-family: "Gilroy-Medium";
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    margin: 0;
+    padding-left: 50px;
+    margin-top: 10px;
+}
+
+.basic-plan, .teams-plan {
+    width: 379px;
+    height: 455px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 0.4px solid #005AE2;
+    box-shadow: 0px 4px 8px 0px #0000000D;
+    border-radius: 12px 0 0 12px;
+    border-width: 0.4px;
+    padding-bottom: 40px;
+
+}
+
+.professional-plan {
+    width: 410px;
+    height: 627px;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0) 100%);
+    border-radius: 12px;
+    color: #ffffff;
+    box-shadow: 0px 4px 8px 0px #0000000D;
+    padding-top: 50px;
+}
+
+.teams-plan {
+    border-radius: 0 12px 12px 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 50px;
+}
+
+ul li {
+    background: url(../icons/check.svg) no-repeat left center;
+    background-size: 16px;
+    padding-left: 25px;
+    line-height: 2;
+}
+
+li {
+    font-family: "Gilroy-Medium";
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-bottom: 20px;
+}
+
+.pricing-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.custom-pricing-btns, .large-action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 48px;
+    padding: 12px 24px;
+    background-color: var(--custom-color-2);
+    box-sizing: border-box;
+    border: none;
+    border-radius: 100px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.custom-pricing-btns {
+    color: var(--custom-color-2);
+    background-color: #ffffff;
+    border: 1px solid var(--custom-color-2);
+}
+
+/* Pricing Section Ends */
+
+/* URL Shortener Section */
+
+.url-shortener-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 523px;
+    margin-bottom: 50px;
+    background: linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0) 100%);
+}
+
+.left-vector {
+    position: relative;
+    right: 300px;
+    top: 262px;
+}
+
+.form-container {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    background-color: #ffffff;
+    max-width: 476px;
+    height: 355px;
+    border-radius: 12px;
+    margin: 20px 20px;
+    padding: 0 20px;
+}
+
+.form-grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 30px 40px;
+}
+
+input[type = url]{
+    grid-column: span 2;
+    background-color: var(--input-bg-color);
+    box-sizing: border-box;
+    width: 394px;
+    height: 55px;
+    border: 1px solid #3284FF;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    gap: 10px;
+    border-radius: 12px;
+    padding-left: 20px;
+}
+
+select {
+    background-color: var(--input-bg-color);
+    box-sizing: border-box;
+    width: 202px;
+    height: 48px;
+    border: 1px solid #3284FF;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+input[type = text]{
+    background-color: var(--input-bg-color);
+    box-sizing: border-box;
+    width: 178px;
+    height: 48px;
+    border: 1px solid #3284FF;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.trim-url {
+    grid-column: span 2;
+    background-color: var(--custom-color-1);
+    box-sizing: border-box;
+    width: 394px;
+    height: 48px;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-family: "Gilroy-SemiBold";
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.magic-wand {
+    position: relative;
+    top: 5px;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    color: #3284FF;
+    font-family: "Gilroy-Medium";
+    font-size: 14px;
+  
+    background: url(../icons/dropdown.svg) no-repeat right 10px center;
+    background-size: 10.54px;
+  }
+
+::placeholder {
+    color: #3284FF;
+    font-family: "Gilroy-Medium";
+}
+
+.url-shortener-form-disclaimer {
+    font-family: "Gilroy-Medium";
+    color: #3284FF;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    padding: 10px 10px;
+}
+
+.span-paragraphs {
+    font-family: "Gilroy-Bold";
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+
+.right-vector {
+    position: relative;
+    bottom: 261px;
+    left: 255px;
+}
+
+/* URL Shortener Section Ends */
+
+/* FAQs Section */
+
+.faqs-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 400px;
+    margin-bottom: 100px;
+}
+
+.faq-heading {
+    display: flex;
+    flex-direction: row;
+}
+
+.faq-heading::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 48px;
+    background: linear-gradient(180deg, #112232 0%, rgba(77, 107, 136, 0) 100%);
+    margin-right: 10px;
+}
+
+.faqs-container {
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    padding: 20px 20px;
+    padding-top: 40px;
+}
+
+.faq-question, .faq-question-special {
+    font-family: "Gilroy-Medium";
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0%;
+}
+
+.question-container, .question-container-special {
+    padding: 10px 0;
+}
+
+.question-container::after {
+    content: "";
+    display: block;
+    width: 104%;
+    height: 1px;
+    background-color: #D6D6D6;
+    position: relative;
+    bottom: -10px;
+}
+
+.question-container-special::after {
+    content: "";
+    display: block;
+    width: 104%;
+    height: 1px;
+    background-color: #D6D6D6;
+    position: relative;
+    bottom: -10px;
+}
+
+.faq-answer, .faq-answer-special {
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0%;
+}
+
+.faq-icon {
+    width: 24px;
+    position: relative;
+    top: 35px;
+    margin-left: 30px;
+}
+
+.faq-vector-one, .faq-vector-two {
+    position: absolute;
+}
+
+.faq-vector-one {
+    top: 3750px;
+}
+
+.faq-vector-two {
+    top: 4670px;
+    left: 1066px;
+}
+
+/* FAQs Section Ends */
+
+/* CTA Section */
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    height: 400px;
+    color: #ffffff;
+    background: linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0) 100%);
+}
+
+.cta-title-button-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-title {
+    margin-bottom: 40px;
+}
+
+.top-vector {
+    position: relative;
+    top: 100px;
+    left: -400px;
+}
+
+.bottom-vector {
+    position: relative;
+    bottom: 100px;
+    left: 430px;
+}
+
+/* CTA Section Ends */
+
+/* Footer Section */
+
+footer{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 561px;
+    margin: 100px 100px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: var(--main-font-color);
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.scissor-social-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 150px;
+    margin-left: 100px;
+    gap: 30px;
+    margin-bottom: auto;
+    margin-top: 30px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+}
+
+.key-info-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+h6 {
+    font-family: "Gilroy-Bold";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    align-items: center;
+    margin: 5px 0;
+    margin-right: 50px;
+}
+
+.footer-bottom {
+    display: flex;
+    gap: 10px;
+    margin: auto;
+    margin-left: 920px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer-bottom-text {
+    font-family: "Gilroy-Medium";
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #112232;
+    text-align: center;
+    padding: 0;
+}
+
+.footer-bottom-text-line {
+    width: 1px;
+    height: 12px;
+    background-color: #112232;
+    margin: auto;
+}
+
+.footer-vector-one, .footer-vector-two {
+    position: absolute;
+}
+
+.footer-vector-one {
+    overflow: hidden;
+    left: -100px;
+    top: 5730px;
+}
+
+.footer-vector-two {
+    left: 896px;
+    top: 5910px;
+}
+
+/* Footer Section Ends */
